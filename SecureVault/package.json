@@ -1,0 +1,16 @@
+{
+  "name": "securevault",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SecureVault - secure file sharing with fine-grained access control, encryption, versioning and auditing",
+  "scripts": {
+    "setup": "npm --prefix server install && npm --prefix client install && npm --prefix server run setup",
+    "seed": "npm --prefix server run seed",
+    "dev": "concurrently -n server,client -c blue,green \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "test": "npm --prefix server test",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

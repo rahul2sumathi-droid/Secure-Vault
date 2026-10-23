@@ -1,0 +1,7 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "SecureVault: install & configure (first time)", "type": "shell", "command": "npm install && npm run setup && npm run seed", "problemMatcher": [] },
+    { "label": "SecureVault: run (API + web)", "type": "shell", "command": "npm run dev", "isBackground": true, "problemMatcher": [] }
+  ]
+}
